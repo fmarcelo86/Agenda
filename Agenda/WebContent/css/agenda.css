@@ -1,0 +1,150 @@
+.success {
+	background-color: #4CAF50;
+}
+
+.success:hover {
+	background-color: #46a049;
+}
+
+.btn {
+	border: none;
+	color: white;
+	padding: 10px 28px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.btnSmall {
+	border: none;
+	color: white;
+	padding: 3px 10px;
+	text-align: center;
+	display: inline-block;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.1bloqueoModal {
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.2;
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 10px;
+	width: 490px;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+th {
+	font-size: 12px;
+	font-weight: normal;
+	padding: 6px;
+	background: #b9c9fe;
+	border-top: 4px solid #aabcfe;
+	border-bottom: 1px solid #fff;
+	color: #039;
+}
+
+td {
+	padding: 8px;
+	background: #e8edff;
+	border-bottom: 1px solid #fff;
+	color: #669;
+	border-top: 1px solid transparent;
+}
+
+tr:hover td {
+	background: #d0dafd;
+	color: #339;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+#stPersona, #stCrearAgenda {
+	height: 500px;
+	width: 550px;
+	background-color: #FFF;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 9px 9px 9px 9px;
+	-moz-border-radius: 9px 9px 9px 9px;
+	-webkit-border-radius: 9px 9px 9px 9px;
+	border: 0px solid #000000;
+	-webkit-box-shadow: -1px 3px 33px 11px rgba(0, 0, 0, 0.23);
+	-moz-box-shadow: -1px 3px 33px 11px rgba(0, 0, 0, 0.23);
+	box-shadow: -1px 3px 33px 11px rgba(0, 0, 0, 0.23);
+}
+
+#stAgenda {
+	height: 300px;
+	width: 900px;
+	background-color: #FFF;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.tblDatosAgenda td:first-child {
+	width: 90px;
+}
+
+.tblDatosAgenda td:nth-child(2) {
+	width: 80px;
+}
+
+.tblDatosAgenda td:last-child {
+	width: 190px;
+}
+
+.divBotones {
+	position: absolute;
+	margin: auto;
+	left: 40%;
+	right: 0;
+	bottom: 5px;
+}
+
+#tblAgenda {
+	margin: 5px;
+	width: 900px;
+	position: relative;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
+h2 {
+	position: relative;
+	margin: auto;
+	top: 0;
+	left: 550px;
+	right: 0;
+	bottom: 0;
+}

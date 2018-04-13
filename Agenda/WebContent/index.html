@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Agenda</title>
+<link rel="stylesheet" type="text/css" href="css/agenda.css">
+<script type="text/javascript" src="js/model/agenda.js"></script>
+<script type="text/javascript" src="js/model/persona.js"></script>
+
+<script type="text/javascript" src="js/controller/agendaController.js"></script>
+<script type="text/javascript" src="js/controller/personaController.js"></script>
+
+<script type="text/javascript" src="js/agendaApp.js"></script>
+</head>
+<body>
+	<header>
+		<h2>Sistema de Agenda</h2>
+	</header>
+	<section id="stAgenda">
+		<button class="btnSmall success" onclick="nuevaAgenda()">Nuevo</button>
+		<table id="tblAgenda">
+			<thead>
+				<tr>
+					<th data-agenda="descripcion">Descripcion</th>
+					<th data-agenda="fecha">Fecha</th>
+					<th data-agenda="hora">Hora</th>
+					<th data-agenda="asunto">Asunto</th>
+					<th data-agenda="personas">Asistentes</th>
+					<th data-agenda="acciones">Acciones</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</section>
+
+	<div class="bloqueoModal"></div>
+
+	<section id="stPersona" class="invisible">
+		<table id="tblPersona">
+			<thead>
+				<tr>
+					<th data-agenda="nombres">Nombres</th>
+					<th data-agenda="apellidos">Apellidos</th>
+					<th data-agenda="telefono">Telefono</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</section>
+	
+	<section id="stCrearAgenda" class="invisible">
+		<input type="hidden" id="txtId" value="-1" />
+		<table class="tblDatosAgenda">
+			<tbody>
+				<tr>
+					<td>Descripcion:</td>
+					<td><input type="text" id="txtDescripcion" width="400px" /></td>
+					<td>Nombres:</td>
+					<td><input type="text" id="txtNombres" /></td>
+				</tr>
+				<tr>
+					<td>Fecha:</td>
+					<td><input type="date" id="txtFecha" /></td>
+					<td>Apellidos:</td>
+					<td><input type="text" id="txtApellidos" /></td>
+				</tr>
+				
+				<tr>
+					<td>Hora:</td>
+					<td><input type="time" id="txtHora" /></td>
+					<td>Telefono:</td>
+					<td><input type="text" id="txtTelefono" /></td>
+				</tr>
+				<tr>
+					<td>Asunto:</td>
+					<td colspan="2"><input type="text" id="txtAsunto" />
+					<td><button id="btnAgregarPersona" data-indice-registro="" class="btnSmall success" onclick="fnAgregarPersona()">Agregar</button></td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<table id="tblPerAgenda" data-registros="">
+			<thead>
+				<tr>
+					<th data-agenda="nombres">Nombres</th>
+					<th data-agenda="apellidos">Apellidos</th>
+					<th data-agenda="telefono">Telefono</th>
+					<th data-agenda="acciones">Acciones</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<div class="divBotones">
+			<button id="btnGuardar" data-indice-registro="" class="btnSmall success" onclick="fnGuardarAgenda()">Guardar</button>
+			<button id="btnCancelar" class="btnSmall success" onclick="fnCancelar('#stCrearAgenda')">Cancelar</button>
+		</div>
+	</section>
+	
+</body>
+</html>
